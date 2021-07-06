@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Calculator</title>
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+
+</head>
+<body>
+	<div id="calculadora">	
+			<div id="tela"></div>	
+			<div id="botoes"></div>
+				<div class="row">
+					<div class="btn btn-clear" onclick="limpaTela('')">C</div>
+					<div class="btn">(</div>
+					<div class="btn">)</div>
+					<div class="btn" onclick="digOp('+')">+</div>
+				</div>
+				<div class="row">
+					<div class="btn" onclick="digNum('1')">1</div>
+					<div class="btn" onclick="digNum('2')">2</div>
+					<div class="btn" onclick="digNum('3')">3</div>
+					<div class="btn" onclick="digOp('-')">-</div>
+				</div>
+
+				<div class="row">
+					<div class="btn" onclick="digNum('4')">4</div>
+					<div class="btn" onclick="digNum('5')">5</div>
+					<div class="btn" onclick="digNum('6')">6</div>
+					<div class="btn" onclick="digOp('*')">*</div>
+				</div>
+
+				<div class="row">
+					<div class="btn" onclick="digNum('7')">7</div>
+					<div class="btn" onclick="digNum('8')">8</div>
+					<div class="btn" onclick="digNum('9')">9</div>
+					<div class="btn" onclick="digOp('/')">/</div>
+				</div>
+
+				<div class="row">
+					<div class="btn" onclick="digNum('.')">.</div>
+					<div class="btn" onclick="digNum('0')">0</div>
+					<div class="btn btn-result" onclick="resul()">=</div>
+				</div>
+		</div>
+
+		<script type="text/javascript" src="./js/app.js"></script>
+</body>
+</html>
